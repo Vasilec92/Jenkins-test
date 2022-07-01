@@ -11,7 +11,7 @@ pipeline {
 
   stage('test') {
     steps {
-        echo 'Testing ...'
+        sh './vendor/bin/phpunit'
     }
   }
 
